@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+
+header {
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.container {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100pxs;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    column-gap: 48px;
+}
+
+.menu ul {
+    justify-content: space-between;
+    display: flex;
+    column-gap: 30px;
+}
+
+.menu a {
+    font-size: 20px;
+}
+
+.menu-button {
+    display: flex;
+    column-gap: 48px;
+    font-size: 20px;
+    border: 2px solid blueviolet;
+    background-color: white;
+    color: blueviolet;
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+
+.menu-button:hover {
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid white;
+}
+
+/*responsive */
+
+@media(max-width: 576px) {
+
+    body {
+        background-repeat: no-repeat;
+        background-size: 100vh 100vh;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        height: 100%;
+    }
+
+    .menu ul {
+        column-gap: 20px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+    
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+    }
+
+    .links a {
+        padding: 14px;
+        width: 90%;
+    } 
+}
+
+/* section */
+
+.content {
+    color: black;
+    margin-top: 150px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.content p {
+    font-size: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.links {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+
+.links a {
+    font-size: 18px;
+    width: 280px;
+    border: 2px solid blueviolet;
+    border-radius: 56px;
+    padding: 20px;
+    color: blueviolet;
+    background-color: white;
+    text-align: center;
+    transition: all .25s ease;
+}
+
+.links a:hover {
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid white;
+}
